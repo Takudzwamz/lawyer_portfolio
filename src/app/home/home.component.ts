@@ -39,6 +39,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.title.setTitle('Converge 4 Development');
+    this.title.setTitle('Christine Nhamo');
   }
 }

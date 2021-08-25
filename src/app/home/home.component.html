@@ -1,0 +1,522 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet" />
+
+<!-- Carousel Starts -->
+
+<section>
+    <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
+        [showNavigationIndicators]="showNavigationIndicators">
+        <ng-template ngbSlide *ngFor="let image of images, index as i, index as j">
+            <div class="picsum-img-wrapper">
+                <img [src]="image" alt="Random slide" />
+            </div>
+
+            
+
+            <div style="
+      background: rgba(47, 47, 46, 0.25);
+box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+backdrop-filter: blur( 10.0px );
+-webkit-backdrop-filter: blur( 10.0px );
+border-radius: 20px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+      
+      " class="carousel-caption">
+                <h3 style="color: rgb(8, 102, 243);">{{ titles [i] }}</h3>
+                <p>{{ discription [j] }}</p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <a href="/policies" style="color: #FFFFFF;
+                    background-color:rgb(8, 102, 243);
+                    border-radius: 30px;
+                    border: none;
+                    margin: 10px 10px;
+                    padding: 10px 10px;
+                    text-align: center;
+                    "class="btn btn-secondary active">
+                         Learn more
+                    </a>
+                    
+                </div>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+
+</section>
+
+<!-- Carousel End -->
+
+
+<!-- About Start -->
+<div style="
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    color: rgb(8, 102, 243);" class="container-fluid ">
+    <div class="container  pt-0 pt-lg-4">
+        <div class="row align-items-center">
+            <div id="one" class="glass" class="col-lg-7 mt-1 mt-lg-0 pl-lg-5 py-5">
+                
+
+                <h2 style="color: rgb(8, 102, 243)" class="text-rgb(8, 102, 243) text-uppercase font-weight-medium mb-3">
+                    Learn About Us
+                </h2>
+
+                <p class=" mb-2" style="color: #FFFFFF; text-align: justify">
+                    C4D is inspired by Zimbabweans who for more than 4 decades have watched politicians battling out at the political
+                    minefield that made development praxis null and void. Critical levers of development have been thrown aside. In all
+                    fairness, No sector has withstood the test of time and succeeded. No Zimbabwean has been spared harrowing experiences of
+                    life whether one is in diaspora, in world capitals, resides in sewage laden locations and suburbs, rural outposts in all
+                    the ten provinces of Zimbabwe. Even billionaires standing in world capitals feel ashamed to boast of nauseating wealthy
+                    amidst abject poverty characterizing Zimbabwe today. It’s an open secret that the suffering of Zimbabweans socially,
+                    economically, politically, culturally, intellectually and morally has scaled unprecedented heights to ignore. Someone at
+                    some point was going to shout for a stop, call development practitioners to attention, ask them if they see what is seen
+                    by everyone. That time has come. It is at this juncture, now, that C4D emerges, observant to the fact that practitioners
+                    can no longer afford to stand akimbo, fold their arms on their chests and look, let alone aside and claim all not to see
+                    anything wrong. Politicians have dominated Zimbabwean landscape for far too long. The situation obtaining in Zimbabwe
+                    compels development practitioners to come out of their shells, comfort zones and act. C4D will reach out and call upon
+                    individuals who feel compelled by the Zimbabwean stalled development case to converge with like-minded individuals and
+                    create a formidable garrison for hopeful Zimbabweans.
+                </p>
+
+
+                <h2 style="color: rgb(8, 102, 243)" class="text-rgb(8, 102, 243) text-uppercase font-weight-medium mb-3">
+                    Our Mission
+                </h2>
+
+                <p class=" mb-2" style="color: #FFFFFF; text-align: justify">
+                    Coordinate sustainable development for all.
+                </p>
+
+                <h2 style="color: rgb(8, 102, 243)" class="text-#FFFFFF text-uppercase font-weight-medium mb-3">
+                    Our Vision
+                </h2>
+
+                <p class=" mb-2" style="color: #FFFFFF; text-align: justify">
+                    A capacitated local citizenry capable of driving own development.
+                </p>
+
+                <h2 style="color: rgb(8, 102, 243)" class="text-rgb(8, 102, 243) text-uppercase font-weight-medium mb-3">
+                    Values
+                </h2>
+
+                <div class="row">
+                    <div class="col-sm-6 pt-3">
+                        <div class="d-flex align-items-center">
+                            <i style="color: rgb(8, 102, 243)" class="fa fa-check mr-3"></i>
+                            <h4 class="text-#FFFFFF font-weight-medium m-0">
+                             Collaboration and Team work
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pt-3">
+                        <div class="d-flex align-items-center">
+                            <i style="color: rgb(8, 102, 243)" class="fa fa-check text-rgb(8, 102, 243) mr-2"></i>
+                            <h4 class="text-#FFFFFF font-weight-medium m-0">
+                                Transparency and Accountability
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pt-3">
+                        <div class="d-flex align-items-center">
+                            <i style="color: rgb(8, 102, 243)" class="fa fa-check text-rgb(8, 102, 243) mr-2"></i>
+                            <h4 class="text-#FFFFFF font-weight-medium m-0">
+                                Pro-Rights and Pro-Poor
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pt-3">
+                        <div class="d-flex align-items-center">
+                            <i style="color: rgb(8, 102, 243)" class="fa fa-check text-rgb(8, 102, 243) mr-2"></i>
+                            <h4 class="text-#FFFFFF font-weight-medium m-0">
+                                Honesty and Integrity
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pt-3">
+                        <div class="d-flex align-items-center">
+                            <i style="color: rgb(8, 102, 243)" class="fa fa-check text-rgb(8, 102, 243) mr-2"></i>
+                            <h4 class="text-#FFFFFF font-weight-medium m-0">
+                                Results Based Oriented
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pt-3">
+                        <div class="d-flex align-items-center">
+                            <i style="color: rgb(8, 102, 243)" class="fa fa-check text-rgb(8, 102, 243) mr-2"></i>
+                            <h4 class="text-#FFFFFF font-weight-medium m-0">
+                                Inclusivity
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pt-3">
+                        <div class="d-flex align-items-center">
+                            <i style="color: rgb(8, 102, 243)" class="fa fa-check text-rgb(8, 102, 243) mr-2"></i>
+                            <h4 class="text-#FFFFFF font-weight-medium m-0">
+                                Ubuntu
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pt-3">
+                        <div class="d-flex align-items-center">
+                            <i style="color: rgb(8, 102, 243)" class="fa fa-check text-rgb(8, 102, 243) mr-2"></i>
+                            <h4 class="text-#FFFFFF font-weight-medium m-0">
+                                Gender Sensitive
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 py-5">
+                <!-- Carousel Starts -->
+                <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
+                    [showNavigationIndicators]="showNavigationIndicators">
+                    <ng-template ngbSlide *ngFor="let image of images, index as i, index as j">
+                        <div class="picsum-img-wrapper">
+                            <img [src]="image" alt="Random slide" />
+                        </div>
+                        <div style="
+      background: rgba(47, 47, 46, 0.25);
+box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+backdrop-filter: blur( 10.0px );
+-webkit-backdrop-filter: blur( 10.0px );
+border-radius: 20px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+      
+      " class="carousel-caption">
+                            <h3 style="color: rgb(8, 102, 243)">{{ titles [i] }}</h3>
+                            <p>{{ discription [j] }}</p>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+                <!-- Carousel End -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<div style="
+    background: rgba(0, 0, 0, 0.1);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+
+    color: rgb(8, 102, 243);
+  " class="container-fluid py-5">
+    <div class="container">
+        <div class="row">
+            <div  class="col-lg-7 m-0 my-lg-5 pt-0 pt-lg-5 pr-lg-5">
+                <h2 style="color: rgb(8, 102, 243)"
+                    class="text-rgb(8, 102, 243) text-uppercase font-weight-medium mb-3">
+                    Sustainable Development
+                </h2>
+
+            </div>
+            <div class="col-lg-5">
+                <div class="
+            d-flex
+            flex-column
+            align-items-center
+            justify-content-center
+            bg-secondary
+            h-100
+            py-5
+            px-3
+          ">
+
+                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_ghunc0fe.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;"  loop autoplay>
+                    </lottie-player>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Features End -->
+<!-- Contact Info Start 
+<section class="blur py-5">
+    
+    <div class="container-fluid contact-info mt-5 mb-4">
+        <div class="container" style="padding: 0 30px">
+            <div class="row">
+                <div class="
+            col-md-4
+            d-flex
+            align-items-center
+            justify-content-center
+            bg-secondary
+            mb-4 mb-lg-0
+          " style="height: 100px">
+                    <div class="d-inline-flex">
+                        <i style="color: rgb(8, 102, 243)" class="fa fa-2x fa-map-marker text-#122E05 m-0 mr-3"></i>
+                        <div class="d-flex flex-column">
+                            <h5 style="color: #ffffff" class="font-weight-medium">Address</h5>
+                            <p style="color: #000000" class="m-0">29, Harare, Zimbabwe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="
+            col-md-4
+            d-flex
+            align-items-center
+            justify-content-center
+            bg-secondary
+            mb-4 mb-lg-0
+          " style="height: 100px; color: rgb(8, 102, 243)">
+                    <div class="d-inline-flex text-left">
+                        <i class="fa fa-2x fa-envelope text-rgb(8, 102, 243) m-0 mr-3"></i>
+                        <div class="d-flex flex-column">
+                            <h5 style="color: #ffffff" class="text-rgb(8, 102, 243) font-weight-medium">
+                                Email Us
+                            </h5>
+                            <p class="m-0 text-#000000">info@transformzim.co.zw</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="
+            col-md-4
+            d-flex
+            align-items-center
+            justify-content-center
+            bg-secondary
+            mb-4 mb-lg-0
+          " style="height: 100px">
+                    <div class="d-inline-flex text-left">
+                        <i style="color: rgb(8, 102, 243)" class="fa fa-2x fa-phone m-0 mr-3"></i>
+                        <div class="d-flex flex-column">
+                            <h5 style="color: #ffffff" class="text-rgb(8, 102, 243) font-weight-medium">
+                                Call Us
+                            </h5>
+                            <p style="color: #000000" class="m-0 text-rgb(8, 102, 243)">
+                                +263 ## ### ## ##
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>-->
+<!-- Contact Info End -->
+<!-- Carousel End -->
+
+<section>
+    <div style="
+      background: rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+      color: rgb(8, 102, 243);
+    " class="container-fluid pt-5 pb-3">
+        <div  id="four" class="content">
+            <h2 style="color: rgb(8, 102, 243)">FAQs</h2>
+            <!-- __________________________ SECTIONS ___________________________ -->
+
+            <h3 style="color: rgb(8, 102, 243)">GOT A QUESTION? WE'RE HERE TO HELP</h3>
+
+            <div>
+                <input type="checkbox" id="question11" name="q" class="questions" />
+                <div style="color: rgb(8, 102, 243)" class="plus">+</div>
+                <label for="question11" class="question">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                    at lobortis magna. Integer urna velit, rutrum id massa ornare,
+                    fermentum dapibus metus.
+                </label>
+                <div class="answers">
+                    <p>
+                        Nullam sodales arcu at efficitur bibendum. Curabitur in odio ut
+                        lacus condimentum lobortis quis ac tortor. Donec eu turpis at orci
+                        sagittis auctor ut eu arcu. Duis et varius lacus. Etiam sit amet
+                        justo justo. Sed dignissim enim vel justo facilisis consequat.
+                        Phasellus cursus bibendum sem ut vestibulum. Morbi vestibulum ex sit
+                        amet ex suscipit maximus.
+                    </p>
+                </div>
+            </div>
+            <!-- _____________________________________________________ -->
+            <div>
+                <input type="checkbox" id="question12" name="q" class="questions" />
+                <div style="color: rgb(8, 102, 243)" class="plus">+</div>
+                <label for="question12" class="question">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                    at lobortis magna. Integer urna velit, rutrum id massa ornare,
+                    fermentum dapibus metus.
+                </label>
+                <div class="answers">
+                    <p>
+                        Nullam sodales arcu at efficitur bibendum. Curabitur in odio ut
+                        lacus condimentum lobortis quis ac tortor. Donec eu turpis at orci
+                        sagittis auctor ut eu arcu. Duis et varius lacus. Etiam sit amet
+                        justo justo. Sed dignissim enim vel justo facilisis consequat.
+                        Phasellus cursus bibendum sem ut vestibulum. Morbi vestibulum ex sit
+                        amet ex suscipit maximus.
+                    </p>
+                    <p>
+                        Nullam sodales arcu at efficitur bibendum. Curabitur in odio ut
+                        lacus condimentum lobortis quis ac tortor. Donec eu turpis at orci
+                        sagittis auctor ut eu arcu. Duis et varius lacus. Etiam sit amet
+                        justo justo. Sed dignissim enim vel justo facilisis consequat.
+                        Phasellus cursus bibendum sem ut vestibulum. Morbi vestibulum ex sit
+                        amet ex suscipit maximus.
+                    </p>
+                </div>
+            </div>
+            <!-- _____________________________________________________ -->
+            <div>
+                <input type="checkbox" id="question13" name="q" class="questions" />
+                <div style="color: rgb(8, 102, 243)" class="plus">+</div>
+                <label for="question13" class="question">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </label>
+                <div class="answers">
+                    <p>
+                        Nullam sodales arcu at efficitur bibendum. Curabitur in odio ut
+                        lacus condimentum lobortis quis ac tortor. Donec eu turpis at orci
+                        sagittis auctor ut eu arcu. Duis et varius lacus. Etiam sit amet
+                        justo justo. Sed dignissim enim vel justo facilisis consequat.
+                        Phasellus cursus bibendum sem ut vestibulum. Morbi vestibulum ex sit
+                        amet ex suscipit maximus.
+                    </p>
+                </div>
+            </div>
+            <!-- _____________________________________________________ -->
+            <div>
+                <input type="checkbox" id="question14" name="q" class="questions" />
+                <div style="color: rgb(8, 102, 243)" class="plus">+</div>
+                <label for="question14" class="question">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </label>
+                <div class="answers">
+                    <p>
+                        Nullam sodales arcu at efficitur bibendum. Curabitur in odio ut
+                        lacus condimentum lobortis quis ac tortor. Donec eu turpis at orci
+                        sagittis auctor ut eu arcu. Duis et varius lacus. Etiam sit amet
+                        justo justo. Sed dignissim enim vel justo facilisis consequat.
+                        Phasellus cursus bibendum sem ut vestibulum. Morbi vestibulum ex sit
+                        amet ex suscipit maximus.
+                    </p>
+                </div>
+            </div>
+            <!-- _____________________________________________________ -->
+
+            <!-- _____________________________________________________ -->
+            <div>
+                <input type="checkbox" id="question15" name="q" class="questions" />
+                <div style="color: rgb(8, 102, 243)" class="plus">+</div>
+                <label for="question15" class="question">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </label>
+                <div class="answers">
+                    <p>
+                        Nullam sodales arcu at efficitur bibendum. Curabitur in odio ut
+                        lacus condimentum lobortis quis ac tortor. Donec eu turpis at orci
+                        sagittis auctor ut eu arcu. Duis et varius lacus. Etiam sit amet
+                        justo justo. Sed dignissim enim vel justo facilisis consequat.
+                        Phasellus cursus bibendum sem ut vestibulum. Morbi vestibulum ex sit
+                        amet ex suscipit maximus.
+                    </p>
+                </div>
+            </div>
+            <!-- _____________________________________________________ -->
+
+            <!-- _____________________________________________________ -->
+            <div>
+                <input type="checkbox" id="question16" name="q" class="questions" />
+                <div style="color: rgb(8, 102, 243)" class="plus">+</div>
+                <label for="question16" class="question">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </label>
+                <div class="answers">
+                    <p>
+                        Nullam sodales arcu at efficitur bibendum. Curabitur in odio ut
+                        lacus condimentum lobortis quis ac tortor. Donec eu turpis at orci
+                        sagittis auctor ut eu arcu. Duis et varius lacus. Etiam sit amet
+                        justo justo. Sed dignissim enim vel justo facilisis consequat.
+                        Phasellus cursus bibendum sem ut vestibulum. Morbi vestibulum ex sit
+                        amet ex suscipit maximus.
+                    </p>
+                </div>
+            </div>
+            <!-- _____________________________________________________ -->
+
+            <!-- __________________________ SECTIONS ___________________________ -->
+
+            <h3 style="color: rgb(8, 102, 243)">DONATIONS</h3>
+
+            <div>
+                <input type="checkbox" id="question17" name="q" class="questions" />
+                <div style="color: rgb(8, 102, 243)" class="plus">+</div>
+                <label for="question17" class="question">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit.
+                </label>
+                <div class="answers">
+                    <p>
+                        Nullam sodales arcu at efficitur bibendum. Curabitur in odio ut
+                        lacus condimentum lobortis quis ac tortor. Donec eu turpis at orci
+                        sagittis auctor ut eu arcu. Duis et varius lacus. Etiam sit amet
+                        justo justo. Sed dignissim enim vel justo facilisis consequat.
+                        Phasellus cursus bibendum sem ut vestibulum. Morbi vestibulum ex sit
+                        amet ex suscipit maximus.
+                    </p>
+                </div>
+            </div>
+            <!-- _____________________________________________________ -->
+            <div>
+                <input type="checkbox" id="question18" name="q" class="questions" />
+                <div style="color: rgb(8, 102, 243)" class="plus">+</div>
+                <label for="question18" class="question">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </label>
+                <div class="answers">
+                    <p>
+                        Nullam sodales arcu at efficitur bibendum. Curabitur in odio ut
+                        lacus condimentum lobortis quis ac tortor. Donec eu turpis at orci
+                        sagittis auctor ut eu arcu. Duis et varius lacus. Etiam sit amet
+                        justo justo. Sed dignissim enim vel justo facilisis consequat.
+                        Phasellus cursus bibendum sem ut vestibulum. Morbi vestibulum ex sit
+                        amet ex suscipit maximus.
+                    </p>
+                </div>
+            </div>
+            <!-- _____________________________________________________ -->
+
+            <!-- __________________________ SECTIONS ___________________________ -->
+
+            <h3 style="color: rgb(8, 102, 243)">OUR OPERATIONS</h3>
+
+            <div>
+                <input type="checkbox" id="question19" name="q" class="questions" />
+                <div style="color: rgb(8, 102, 243)" class="plus">+</div>
+                <label for="question19" class="question">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </label>
+                <div class="answers">
+                    <p>
+                        Nullam sodales arcu at efficitur bibendum. Curabitur in odio ut
+                        lacus condimentum lobortis quis ac tortor. Donec eu turpis at orci
+                        sagittis auctor ut eu arcu. Duis et varius lacus. Etiam sit amet
+                        justo justo. Sed dignissim enim vel justo facilisis consequat.
+                        Phasellus cursus bibendum sem ut vestibulum. Morbi vestibulum ex sit
+                        amet ex suscipit maximus.
+                    </p>
+                </div>
+            </div>
+
+            <!-- __________________________ SECTIONS ___________________________ -->
+        </div>
+    </div>
+</section>

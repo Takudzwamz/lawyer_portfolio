@@ -14,14 +14,14 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.metaTagService.addTags([
-      {name: 'keywords', content: 'Converge 4 Development, C4D, NGO, None-Profit, Zimbabwe, Zimbabwe development,Sustainable, Harare, Victoria Falls, Zim, Infrastructure, Africa'},
+      {name: 'keywords', content: 'Christine Nhamo, Zimbabwe, South Africa, International law, Advocate, English Teacher, Radio Presenter, Editor, Writer, Customer service agent'},
       {name: 'robots', content: 'index, follow'},
       {name: 'google-site-verification', content: 'zqnYEsQ6-_sH21DgGfnth3gUmjbo8bazU4lUlMBvOX8'},
-      {name: 'description', content: 'C4D will reach out and call upon individuals who feel compelled by the Zimbabwean stalled development case to converge with like-minded individuals and create a formidable garrison for hopeful Zimbabweans.'},
-      {name: 'developers', content: 'Zimbabweans'},
-      {name: 'twitter:card', content: 'Converge 4 Development'},
-      {name: 'twitter:title', content: 'Pushing development for all Zimbabweans'},
-      {name: 'twitter:description', content: 'C4D will reach out and call upon individuals who feel compelled by the Zimbabwean stalled development case to converge with like-minded individuals and create a formidable garrison for hopeful Zimbabweans.'},
+      {name: 'description', content: 'I am an International advocate, an Author of 5 books, TV Personality  TV Personality, Social Activist, Human Rights Defender, Legal Advisor, Radio Presenter, Counsellor, Graphic designer, Motivational Speaker, Humanitarian, Certified English Teacher, Translator, Founder and Director of a Zimbabwean Magazine called Zim Influencers Magazine as well as a managing director of Zim Talks Broadcasting Company'},
+      {name: 'author', content: 'Christine Nhamo'},
+      {name: 'twitter:card', content: 'Christine Nhamo'},
+      {name: 'twitter:title', content: 'I strongly believe in living a principled life, that directly marks a solid positive impact in the world. '},
+      {name: 'twitter:description', content: 'I am an International advocate, an Author of 5 books, TV Personality  TV Personality, Social Activist, Human Rights Defender, Legal Advisor, Radio Presenter, Counsellor, Graphic designer, Motivational Speaker, Humanitarian, Certified English Teacher, Translator, Founder and Director of a Zimbabwean Magazine called Zim Influencers Magazine as well as a managing director of Zim Talks Broadcasting Company'},
 
     ]);
   }

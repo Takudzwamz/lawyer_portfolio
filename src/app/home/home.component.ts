@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+import { CanonicalService } from '../services/canonical.service';
 // import * as dataJSON from './carousel_images.json';
 
 @Component({
@@ -28,7 +29,7 @@ export class HomeComponent implements OnInit {
  // images = [1055, 194, 368].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
 
-  constructor(config: NgbCarouselConfig, private title: Title) {
+  constructor(config: NgbCarouselConfig, private title: Title, private canonicalService: CanonicalService) {
     // customize default values of carousels used by this component tree
     config.showNavigationArrows = true;
     config.showNavigationIndicators = true;
@@ -39,6 +40,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.canonicalService.setCanonicalURL();
     this.title.setTitle('Christine Nhamo');
+
   }
 }

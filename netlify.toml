@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build:ssr"
+  functions = "./functions"
+  publish = "dist/spaceman/browser"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

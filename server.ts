@@ -16,6 +16,7 @@ import { existsSync } from 'fs';
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
+  const forceSsl = require('force-ssl-heroku');
   const distFolder = join(process.cwd(), 'dist/spaceman/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
@@ -25,6 +26,8 @@ export function app(): express.Express {
   }));
 
   // server.use(sslRedirect());
+  server.use(forceSsl);
+  // lets go
   server.set('view engine', 'html');
   server.set('views', distFolder);
 

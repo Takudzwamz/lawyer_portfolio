@@ -25,6 +25,7 @@ export function app(): express.Express {
   }));
 
   server.use(sslRedirect());
+  
   server.set('view engine', 'html');
   server.set('views', distFolder);
 

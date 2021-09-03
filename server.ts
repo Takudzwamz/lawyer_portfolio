@@ -11,7 +11,7 @@ import { join } from 'path';
 import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
-// import sslRedirect from 'heroku-ssl-redirect';
+import sslRedirect from 'heroku-ssl-redirect';
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
@@ -24,7 +24,7 @@ export function app(): express.Express {
     bootstrap: AppServerModule,
   }));
 
-  // server.use(sslRedirect());
+  server.use(sslRedirect());
   server.set('view engine', 'html');
   server.set('views', distFolder);
 

@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
     this.metaTagService.addTags([
       {name: 'keywords', content: 'Christine Nhamo, Zimbabwe, South Africa, International law, Advocate, English Teacher, Radio Presenter, Editor, Writer, Customer service agent'},
       {name: 'robots', content: 'index, follow'},
-      {name: 'google-site-verification', content: 'zqnYEsQ6-_sH21DgGfnth3gUmjbo8bazU4lUlMBvOX8'},
+      {name: 'google-site-verification', content: '3tmzI_B2ANl7WS84E0HYgeUlDsU27ZfrhCcJeniJYQg'},
       {name: 'description', content: 'I am an International advocate, an Author of 5 books, TV Personality  TV Personality, Social Activist, Human Rights Defender, Legal Advisor, Radio Presenter, Counsellor, Graphic designer, Motivational Speaker, Humanitarian, Certified English Teacher, Translator, Founder and Director of a Zimbabwean Magazine called Zim Influencers Magazine as well as a managing director of Zim Talks Broadcasting Company'},
       {name: 'author', content: 'Christine Nhamo'},
       {name: 'twitter:card', content: 'Christine Nhamo'},
